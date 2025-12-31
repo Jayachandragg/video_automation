@@ -1,0 +1,6 @@
+gradio
+pympi-ling
+torch
+transformers
+sentencepiece
+accelerate
