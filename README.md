@@ -198,3 +198,14 @@ python app.py
 M.S. in Artificial Intelligence
 University at Buffalo
 
+---
+
+## Engineering overview
+
+**Problem:** Fragmented ELAN annotations are difficult to reuse for event-level analysis.
+
+**Pipeline:** ELAN `.eaf` → tier extraction → deterministic merging → consecutive-topic merging → LLM-assisted adjacency merging → JSON.
+
+The Gradio interface is in `app.py`, with dependencies in `requirements.txt`. Use anonymized examples when sharing annotated human-interaction data.
+
+**Evaluation still needed:** Document boundary agreement, manual-review time, representative failure cases, and reproducible test data. No independent performance benchmark is claimed here.
